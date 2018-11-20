@@ -1,0 +1,19 @@
+
+<div class="row col-md-6">
+  <div class="card"  >
+      <div class="card-header"> Authentication </div>
+      <div class="card-body">
+        <form #f="ngForm" (ngSubmit)="onSaveTask(f.value)" >
+<div class="formGroup">
+  <label class="control-label">Task Name</label>
+<input class="form-control" required type="text" ngModel="" name="tasksName">
+<p></p>
+<button class="btn btn-success" type="submit" [disabled]="!f.valid">Add New Task</button>
+
+</div>
+  </form>
+        </div>
+  </div>
+
+</div>
+
